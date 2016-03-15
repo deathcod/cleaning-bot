@@ -21,6 +21,8 @@ Earlier implementation included
 * this implementation fails for larger n 
 * thus created a new implementation.
 
+>hr clean bot difficult.cpp
+
 ***second implementation***
 
 This uses euclidean minimum spanning tree using delanuary triangulation and robust point find algorithm and serves my purpose in **nlogn** time.
@@ -77,3 +79,6 @@ now to implement delanuary triangulation I use bfs to traverse through the edges
 and if it returns true then swapping of the egdes is done and the add and delete of the triangle is done,and the unvisited edges of the quadrilateral is inserted into the queue.Thus reconstructing the graph till no edges is in the queue.
 
 Once all the points are placed and traingulation is done it means that each vertices is now connected to its closest vertice and thus now apply the minimum spanning tree on the sorted edges vs distance and repeat the previous process on this and then the overall time will be reduced to O(NlogN).
+
+* bot-modified.cpp
+* radar-modified.h
