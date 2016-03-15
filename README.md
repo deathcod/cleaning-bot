@@ -34,7 +34,8 @@ if(!rightof(*a) && !rightof(*b) && !rightof(*c))
 		return x
 ```
 using robust point location algorithm to find the triangle
-```Function: BF Locate
+```
+Function: BF Locate
 In: X: Point whose location is to be found
 T: Triangulation in which point is to be located
 Out: e: Edge on which X lies, or which has the triangle containing X
@@ -64,8 +65,8 @@ begin
     endwhile
 end
 ```
+as soon as I get the triangle I delete the outer triangle and create three inner triangle
 
- as soon as I get the triangle I delete the outer triangle and create three inner triangle
 + ```void delete_triangle(line *x,triangle tt);```  to delete the triangle
 + ```void add_triangle(point *a,point *b,point *c);``` to add the three triangles
 + ```void delete_add_triangle(triangle tt,point *e);``` calls the above triangles to perform the task.
