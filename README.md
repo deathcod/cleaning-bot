@@ -65,8 +65,8 @@ begin
     endwhile
 end
 ```
-as soon as I get the triangle I delete the outer triangle and create three inner triangle
 
+ as soon as I get the triangle I delete the outer triangle and create three inner triangle
 + ```void delete_triangle(line *x,triangle tt);```  to delete the triangle
 + ```void add_triangle(point *a,point *b,point *c);``` to add the three triangles
 + ```void delete_add_triangle(triangle tt,point *e);``` calls the above triangles to perform the task.
@@ -74,4 +74,6 @@ as soon as I get the triangle I delete the outer triangle and create three inner
 now to implement delanuary triangulation I use bfs to traverse through the edges of quadrilatral, the one which does not follow
 + ``` bool isdelaunary(point *a,point *b,point *c,point *d)``` 
 
-and if it returns true then swapping of the egdes is done and the add and delete of the triangle is done,and the unvisited edges of the quadrilateral is inserted into the queue.Thus reconstructing the graph till no edges is in the graph.
+and if it returns true then swapping of the egdes is done and the add and delete of the triangle is done,and the unvisited edges of the quadrilateral is inserted into the queue.Thus reconstructing the graph till no edges is in the queue.
+
+Once all the points are placed and traingulation is done it means that each vertices is now connected to its closest vertice and thus now apply the minimum spanning tree on the sorted edges vs distance and repeat the previous process on this and then the overall time will be reduced to O(NlogN).
