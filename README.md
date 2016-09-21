@@ -6,7 +6,7 @@ This is an implementation of graph traversal of the bot through points in 2d pla
 
 Suppose that there is a x-y plane and set of points are listed on that plane.Now suppose a bot is placed in this plane and condition is imposed that the bot has to travel through these set of points such that the count of the moves is optimal.
 
-![cleaning bot](cleaning_bot.gif)
+![cleaning bot](cleaning_bot.gif)  
 **My first implementation**
 
 Earlier implementation included 
