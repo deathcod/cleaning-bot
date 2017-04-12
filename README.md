@@ -84,5 +84,5 @@ Once all the points are placed and traingulation is done it means that each vert
 * bot-modified.cpp
 * radar-modified.h
 
-###to be done
+### to be done  
 Currently I am working to embed the c++ code in python for the gui support so that it can be shown how the algorithm works
